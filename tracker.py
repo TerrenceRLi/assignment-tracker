@@ -2,6 +2,9 @@
 
 
 def show(items):
+    if not items:
+        print("No assignments due. Enjoy your free time!")
+        return
     print("Upcoming Assignments (sorted by due date)")
     print("=" * 30)
     for item in sorted(items, key=lambda a: a["due"]):
