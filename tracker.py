@@ -2,10 +2,11 @@
 
 
 def show(items):
-    print("Upcoming Assignments")
+    print("Upcoming Assignments (sorted by due date)")
     print("=" * 30)
     for item in sorted(items, key=lambda a: a["due"]):
         print(f"{item['due']}  {item['name']}")
+    print(f"Total: {len(items)} assignments")
 
 
 assignments = [
