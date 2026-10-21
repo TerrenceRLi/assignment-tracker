@@ -2,7 +2,7 @@
 
 
 def show(items):
-    print("My Asignments")
+    print("My Assignments")
     print("=" * 30)
     for item in items:
         print(f"{item['due']}  {item['name']}")
