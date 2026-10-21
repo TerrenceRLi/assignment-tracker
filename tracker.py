@@ -4,7 +4,7 @@
 def show(items):
     print("Upcoming Assignments")
     print("=" * 30)
-    for item in items:
+    for item in sorted(items, key=lambda a: a["due"]):
         print(f"{item['due']}  {item['name']}")
 
 
